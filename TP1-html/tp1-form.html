@@ -1,0 +1,68 @@
+<html>
+
+  <head>
+    <title>Form</title>
+    <meta charset="UTF-8">
+  </head>
+
+  <body>
+
+    <header>
+      <h1>Please fill out all the info below</h1>
+    </header>
+
+    <form action="save.php" method="post">
+      <!-- form controls go here -->
+      <label>Name
+        <input type="text" name="name">
+      </label>
+
+      <br><br>
+
+      <input type="radio" name="Age" value="<18" checked="checked"><18
+      <input type="radio" name="Age" value="19-35" >19-35
+      <input type="radio" name="Age" value="36-48" >36-48
+      <input type="radio" name="Age" value="36-48" >>49
+
+      <br><br>
+
+      <label>Profession
+        <input type="text" name="profession">
+      </label>
+
+      <br><br>
+
+      <label> Country
+        <select name="Country">
+          <option value="portugal">Portugal</option>
+          <option value="amurica" selected>Amurica</option>
+          <option value="Mexico">Mexico</option>
+          <option value="Marroco">Marroco</option>
+        </select>
+      </label>
+
+      <br><br>
+
+      <label>Interests:
+        <input type="radio" name="Basketball" value="<Basketball">Basketball
+        <input type="radio" name="Football" value="Football">Football
+        <input type="radio" name="Soccer" value="Soccer">Soccer
+        <input type="radio" name="Volleyball" value="Volleyball">Volleyball
+      </label>
+
+      <br><br>
+
+      <textarea name="How did you find out about the website" rows="4" cols="50">
+        This is an input field that allows
+        the user to input several lines of text.
+      </textarea>
+
+      <br><br>
+
+      <input type="submit" value="Submit form">
+
+    </form>
+
+  </body>
+
+</html>
